@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">geocamoff</string>
+    <string name="title_activity_settings">Geofence Settings</string>
+</resources>

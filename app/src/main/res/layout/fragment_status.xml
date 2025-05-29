@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="?android:windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/colorSurface"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewGeoStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restricted Locations:"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewCameraStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera status: Unknown"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCheckNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Now"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
