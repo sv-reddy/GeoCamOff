@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Security Settings Section -->
+        <TextView
+            android:id="@+id/security_settings_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security Notification Settings"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+            
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/security_notifications_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enable Security Notifications"
+            android:textSize="16sp"
+            android:checked="true"
+            app:layout_constraintTop_toBottomOf="@id/security_settings_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+            
+        <TextView
+            android:id="@+id/security_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Security Phone Number:"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/security_notifications_switch"
+            app:layout_constraintStart_toStartOf="parent"/>
+            
+        <EditText
+            android:id="@+id/security_phone_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="+1234567890"
+            android:inputType="phone"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/security_phone_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+            
+        <TextView
+            android:id="@+id/security_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Security Email Address:"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/security_phone_input"
+            app:layout_constraintStart_toStartOf="parent"/>
+            
+        <EditText
+            android:id="@+id/security_email_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="security@company.com"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/security_email_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+            
+        <Button
+            android:id="@+id/save_security_settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Save Settings"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            app:layout_constraintTop_toBottomOf="@id/security_email_input"
+            app:layout_constraintStart_toStartOf="parent"/>
+            
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/save_security_settings_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Restricted Zones Section -->
+        <TextView
+            android:id="@+id/geofence_list_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Restricted Zones"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/geofence_list"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/geofence_list_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

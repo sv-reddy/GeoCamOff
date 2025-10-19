@@ -1,0 +1,35 @@
+[
+  {
+    "name": "BDL Kanchanbagh",
+    "coordinates": [
+      {"latitude": 17.334659, "longitude": 78.507871},
+      {"latitude": 17.332122, "longitude": 78.504554},
+      {"latitude": 17.327774, "longitude": 78.500361},
+      {"latitude": 17.322233, "longitude": 78.506657},
+      {"latitude": 17.317439, "longitude": 78.511036},
+      {"latitude": 17.321821, "longitude": 78.516796},
+      {"latitude": 17.326689, "longitude": 78.512508},
+      {"latitude": 17.329780, "longitude": 78.512387}     
+    ],
+    "id": "BDL_01"
+  },  {
+    "name": "Shashank",
+    "coordinates": [
+      {"latitude": 17.3527083, "longitude": 78.5330843},
+      {"latitude": 17.3531921, "longitude": 78.5322325},
+      {"latitude": 17.3533489, "longitude": 78.5325567},
+      {"latitude": 17.3529121, "longitude": 78.5327179}
+    ],
+    "id": "SVR_01"
+  },
+  {
+    "name": "Gautam ",
+    "coordinates": [
+      {"latitude": 17.4070, "longitude": 78.4830},
+      {"latitude": 17.4070, "longitude": 78.4865},
+      {"latitude": 17.4035, "longitude": 78.4865},
+      {"latitude": 17.4035, "longitude": 78.4830}
+    ],
+    "id": "Gautam_01"
+  }
+]
