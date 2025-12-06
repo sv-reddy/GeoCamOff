@@ -1,3 +1,11 @@
+## 🤝 Collaborators
+
+This project was developed as part of our internship at Bharat Dynamics Limited. We would like to thank the following collaborators/Co-Authors who coordinated and developed the project:
+
+* **Gautam Babel Jain** ([@PixelNavigation](https://github.com/PixelNavigation))
+* **Korivi Risht** ([@rishirishith18](http://github.com/rishirishith18))
+
+
 # GeoCamOff - Location-Based Camera Security System
 
 <div align="center">
